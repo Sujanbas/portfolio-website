@@ -389,5 +389,7 @@ nav .fa-solid{
         font-size: 14px;
     }
   
-
+     .tab-links::after{
+        margin-bottom: 0.05PX;
+    }
 }
