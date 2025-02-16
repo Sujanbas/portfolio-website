@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing:  border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     COLOR: #FFF;
@@ -315,6 +318,11 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+#msg{
+    color:#61b752;
+    margin-top: -40px;
+    display: block;
+}
 
 /*-----------------------------Small Screen---------------------------------*/
 nav .fa-solid{
@@ -346,6 +354,7 @@ nav .fa-solid{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display: block;
@@ -358,5 +367,27 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+        
+    }
+    .copyright{
+        font-size: 14px;
+    }
+  
 
 }
