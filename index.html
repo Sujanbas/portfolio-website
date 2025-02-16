@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/3b8f9e8c33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hello, I am <span>Sujan</span><br> From USA</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------about--------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="images/me2.jpg">  
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        I am a passionate software developer with two years of experience in the industry,
+                        specializing in Java and related technologies. Currently, 
+                        I am pursuing a Master of Science in Information Technology Management at Cumberland University, 
+                        where I am deepening my expertise in IT strategy and management. In addition to my academic journey, 
+                        I am actively working toward earning the Google Data Analyst Certification to expand my skills in data-driven
+                        decision-making. With a strong foundation in software development and a growing proficiency in data analysis, 
+                        I aim to bridge the gap between technology and business, driving innovative solutions through analytical insights 
+                        and scalable software applications.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Wep Page</li>
+                            <li><span>Database Management</span><br>Creating and Updating the database</li>
+                            <li><span>Vulnerability Assessment</span><br>Scanning, identifying, and evaluating security weaknesses in a system or network</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Software developer intern| 11/2023 - 06/2024
+                                <br>CodeVanatage Group LLC, Irving TX</span>
+                                <li>Assisted in developing and testing web applications using Java and Spring frameworks.</li>
+                                <li>Contributed to database design and optimization using MySQL.</li>
+                                <li>Collaborated with cross-functional teams in Agile environments.</li>
+                            </li>
+                       
+                            <li>
+                                <span>Student Developer | 01/2020 - 12/2022
+                                <br>Athens State University, Athens AL</span>
+                                <li>Design and develop website for Alabama Institute of Mindfullness</li>
+                                <li>Design and develop application for Athens Police Department</li>
+                                <li>Bulit a simple mobile application for ISO</li>
+                                <li>Vulnerability Assessment for kali linux</li>
+                            </li>
+                       
+                            <li>
+                                <span>Customer service representative 1/2019 - 12/2019
+                                <br>Fastenal, Alabama</span>
+                                <li>Assisted customers with product inquiries and order placements.</li>
+                                <li>Resolved customer complaints and provided effective solutions.</li> 
+                                <li>Processed sales transactions and managed inventory updates.</li>                                                         
+                            </li>
+                        </ul>                    
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Master of Science in Information Technology Management| 08/2024 - 06/2026
+                                <br>Cumberland University, Lebanon TN</span>
+                                <li>Current GPA: 4.0</li>
+                            </li>
+                            <li><span>Bachelor of Science in Information Technology | 01/2020 - 12/2022
+                                <br>Athens State University, Athens AL</span>
+                                <li>Mirnor: Accounting</li>
+                                <li>GPA: 3.3</li>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------Services---------------------------------------->
+    <div id class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <Div class="services-list">
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Application Design</h2>
+                    <p>This is my inventory Management system (IMS)</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <h2>Web Page Design</h2>
+                    <p>This is my AIM website design</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>This is my inventory Management system (IMS)</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </Div>
+        </div>
+    </div>
+<!---------------------------Portfolio---------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/AIM.png" alt="">
+                    <div class="layer">
+                        <h3>AIM Website Design</h3>
+                        <p>Design and build web page for Alabama Institute of Mindfullness.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/AIM.png" alt="">
+                    <div class="layer">
+                        <h3>AIM Website Design</h3>
+                        <p>Design and build web page for Alabama Institute of Mindfullness.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/AIM.png" alt="">
+                    <div class="layer">
+                        <h3>AIM Website Design</h3>
+                        <p>Design and build web page for Alabama Institute of Mindfullness.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Sujanbas" class="btn">See more</a>
+        </div>
+    </div>
+<!---------------------------Contact---------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Conatct Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>BasnetSuzan3@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>2563217153</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Sujan<i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i>. </p>
+    </div>
+</div>
+
+<!---------------------------Scripts---------------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openMenu(){
+            sidemenu.style.right = "0";
+        }
+        function closeMenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+ </body>
+</html>
