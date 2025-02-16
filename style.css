@@ -390,6 +390,6 @@ nav .fa-solid{
     }
   
      .tab-links::after{
-        margin-bottom: 0.05PX;
+        margin-bottom: 0.5PX;
     }
 }
